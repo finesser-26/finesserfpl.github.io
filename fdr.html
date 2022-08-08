@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixture Difficulty Rankings</title>
+    <link rel="shortcut icon" href="FinesseFpl.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../../../w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            background: linear-gradient(dodgerblue, deepskyblue, skyblue)
+        }
+        table {
+            font-size: small;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .w3-maroon {
+            background-color: maroon;
+            color: white;
+        }
+        div {
+            padding: 16px;
+        }
+        td {
+            border: 4px lightgrey solid;
+            padding: 1px 15px;
+            font-weight: 500;
+        }
+        .light-grey {
+            background-color: darkgrey;
+        }
+        h1{
+            font-family: monospace;
+            color: white;
+        }
+        .key1 {
+            background-color: seagreen;
+            color: white;
+        }
+        div {
+            margin: auto;
+        }
+        pre {
+            font-weight: bold;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="w3-center">Finesse FPL</h1>
+    <div class="w3-responsive w3-center">
+        <table class="w3-table w3-bordered w3-responsive">
+            <tr>
+                <td class="w3-blue-grey"></td>
+                <td class="w3-blue-grey">GW 1</td>
+                <td class="w3-blue-grey">GW 2</td>
+                <td class="w3-blue-grey">GW 3</td>
+                <td class="w3-blue-grey">GW 4</td>
+                <td class="w3-blue-grey">GW 5</td>
+                <td class="w3-blue-grey">GW 6</td>
+                <td class="w3-blue-grey">GW 7</td>
+                <td class="w3-blue-grey">GW 8</td>
+                <td class="w3-blue-grey">GW 9</td>
+                <td class="w3-blue-grey">GW 10</td>
+                <td class="w3-blue-grey">GW 11</td>
+                <td class="w3-blue-grey">GW 12</td>
+                <td class="w3-blue-grey">GW 13</td>
+                <td class="w3-blue-grey">GW 14</td>
+                <td class="w3-blue-grey">GW 15</td>
+                <td class="w3-blue-grey">GW 16</td>
+                <td class="w3-blue-grey">GW 17</td>
+                <td class="w3-blue-grey">GW 18</td>
+                <td class="w3-blue-grey">GW 19</td>
+                <td class="w3-blue-grey">GW 20</td>
+                <td class="w3-blue-grey">GW 21</td>
+                <td class="w3-blue-grey">GW 22</td>
+                <td class="w3-blue-grey">GW 23</td>
+                <td class="w3-blue-grey">GW 24</td>
+                <td class="w3-blue-grey">GW 25</td>
+                <td class="w3-blue-grey">GW 26</td>
+                <td class="w3-blue-grey">GW 27</td>
+                <td class="w3-blue-grey">GW 28</td>
+                <td class="w3-blue-grey">GW 29</td>
+                <td class="w3-blue-grey">GW 30</td>
+                <td class="w3-blue-grey">GW 31</td>
+                <td class="w3-blue-grey">GW 32</td>
+                <td class="w3-blue-grey">GW 33</td>
+                <td class="w3-blue-grey">GW 34</td>
+                <td class="w3-blue-grey">GW 35</td>
+                <td class="w3-blue-grey">GW 36</td>
+                <td class="w3-blue-grey">GW 37</td>
+                <td class="w3-blue-grey">GW 38</td>
+            </tr>
+            <tr>
+                <td class="w3-white">GW deadline</td>
+                <td class="w3-white">5 Aug</td>
+                <td class="w3-white">13 Aug</td>
+                <td class="w3-white">20 Aug</td>
+                <td class="w3-white">27 Aug</td>
+                <td class="w3-white">30 Aug</td>
+                <td class="w3-white">3 Sep</td>
+                <td class="w3-white">7 Sep</td>
+                <td class="w3-white">16 Sep</td>
+                <td class="w3-white">1 Oct</td>
+                <td class="w3-white">8 Oct</td>
+                <td class="w3-white">15 Oct</td>
+                <td class="w3-white">18 Oct</td>
+                <td class="w3-white">22 Oct</td>
+                <td class="w3-white">29 Oct</td>
+                <td class="w3-white">5 Nov</td>
+                <td class="w3-white">12 Nov</td>
+                <td class="w3-white">26 Dec</td>
+                <td class="w3-white">31 Dec</td>
+                <td class="w3-white">2 Jan</td>
+                <td class="w3-white">14 Jan</td>
+                <td class="w3-white">21 Jan</td>
+                <td class="w3-white">4 Feb</td>
+                <td class="w3-white">11 Feb</td>
+                <td class="w3-white">18 Feb</td>
+                <td class="w3-white">25 Feb</td>
+                <td class="w3-white">4 Mar</td>
+                <td class="w3-white">11 Mar</td>
+                <td class="w3-white">18 Mar</td>
+                <td class="w3-white">1 Apr</td>
+                <td class="w3-white">8 Apr</td>
+                <td class="w3-white">15 Apr</td>
+                <td class="w3-white">22 Apr</td>
+                <td class="w3-white">25 Apr</td>
+                <td class="w3-white">29 Apr</td>
+                <td class="w3-white">6 May</td>
+                <td class="w3-white">13 May</td>
+                <td class="w3-white">20 May</td>
+                <td class="w3-white">28 May</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Arsenal</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-green">WOL (H)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Aston Villa</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">BHA (H)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Bournemouth</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">EVE (A)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Brentford</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Brighton</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-green">AVL (A)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Chelsea</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-maroon">Liv (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="light-grey">NEW (H)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Crystal Palace</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-green">NFO (H)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Everton</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-green">BOU (H)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Fulham</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-red">MUN (A)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Leeds</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="light-grey">TOT (H)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Leicester</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="light-grey">WHU (H)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Liverpool</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-green">BRI (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-green">SOU (A)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Man City</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green"> SOU (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">BRI (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">BRE (A)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Man Utd</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-green">FUL (H)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Newcastle</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-red">CHE (A)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Nott'm Forest</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="w3-green"> BOU (H)</td>
+                <td class="w3-green"> LEE (A)</td>
+                <td class="w3-green"> FUL (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">CRY (A)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Southampton</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Spurs</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-green">LEE (A)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">West Ham</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="w3-green">NFO (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="w3-green">WOL (H)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-red">ARS (A)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="w3-green">WOL (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-red">LEI (A)</td>
+            </tr>
+            <tr>
+                <td class="w3-sand">Wolves</td>
+                <td class="w3-green">LEE (A)</td>
+                <td class="w3-green">FUL (H)</td>
+                <td class="w3-red">TOT (A)</td>
+                <td class="light-grey">NEW (H)</td>
+                <td class="w3-green">BOU (A)</td>
+                <td class="w3-green">SOU (H)</td>
+                <td class="w3-maroon">LIV (A)</td>
+                <td class="w3-maroon">MCI (H)</td>
+                <td class="light-grey">WHU (A)</td>
+                <td class="w3-red">CHE (A)</td>
+                <td class="w3-green">NFO (H)</td>
+                <td class="w3-green">CRY (A)</td>
+                <td class="light-grey">LEI (H)</td>
+                <td class="w3-green">BRE (A)</td>
+                <td class="w3-green">BHA (H)</td>
+                <td class="light-grey">ARS (H)</td>
+                <td class="w3-green">EVE (A)</td>
+                <td class="light-grey">MUN (H)</td>
+                <td class="w3-green">AVL (A)</td>
+                <td class="light-grey">WHU (H)</td>
+                <td class="w3-maroon">MCI (A)</td>
+                <td class="w3-maroon">LIV (H)</td>
+                <td class="w3-green">SOU (A)</td>
+                <td class="w3-green">BOU (H)</td>
+                <td class="w3-green">FUL (A)</td>
+                <td class="light-grey">TOT (H)</td>
+                <td class="light-grey">NEW (A)</td>
+                <td class="w3-green">LEE (H)</td>
+                <td class="w3-green">MFO (A)</td>
+                <td class="w3-red">CHE (H)</td>
+                <td class="w3-green">BRE (H)</td>
+                <td class="w3-red">LEI (A)</td>
+                <td class="w3-green">CRY (H)</td>
+                <td class="w3-green">BHA (A)</td>
+                <td class="w3-green">AVL (H)</td>
+                <td class="w3-red">MUN (A)</td>
+                <td class="w3-green">EVE (H)</td>
+                <td class="w3-red">ARS (A)</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table class="w3-responsive">
+            <tr>
+                <td class="w3-white">FDR Key</td>
+                <td class="key1">1</td>
+                <td class="w3-green">2</td>
+                <td class="light-grey">3</td>
+                <td class="w3-red">4</td>
+                <td class="w3-maroon">5</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
